@@ -1,0 +1,57 @@
+doctype html 
+html
+  head
+    title Gunu Cricket Academy
+    style 
+      include ../static/style.css
+  body 
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/img/cricket-logo.jpg")
+                | GCA
+            li #[a(href="/") Home] 
+            li #[a(href="/") About]  
+            li #[a(href="/") Contact Us] 
+            li #[a(href="/") Services ] 
+            li #[a(href="/") Class Info] 
+ 
+    section#introSection
+        div  Welcome to Gunu Cricket Academy 
+        div.small Cricket, the food of our soul
+
+    section#missionSection 
+        h2 Our Mission 
+        div.card 
+            h3 Get the Cricket Habit
+            div.card-box
+                div.card-img 
+                    img(src="/static/img/img1.jpg")
+                div.card-content 
+                    p To promote excellence in every aspect of Cricket
+        div.card 
+            h3 Go On, it’s your turn
+            div.card-box
+                div.card-img 
+                    img(src="/static/img/bowling.jpg")
+                div.card-content 
+                    p This is the best Cricket Academy of the Universe
+        div.card 
+            h3 Play like Boom Boom 
+            div.card-box
+                div.card-img 
+                    img(src="/static/img/img2.jpg")
+                div.card-content 
+                    p Our goal is to provide facility to play Cricket
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/img/sp0.jpg",alt="Sponsor Image",class="spImage")
+            img(src="/static/img/sp1.jpg",alt="Sponsor Image",class="spImage")
+            img(src="/static/img/sp2.jpg",alt="Sponsor Image",class="spImage")
+            img(src="/static/img/sp3.jpg",alt="Sponsor Image",class="spImage")
+    
+    footer#footer 
+        | Copyright 2021 GunuCricketAcademy.in | All rights reserved
+    script 
+      include ../static/index.js
